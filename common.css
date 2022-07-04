@@ -604,7 +604,7 @@ img {
   }
 }
 .wrapper {
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
   position: relative;
   z-index: 200;
 }
@@ -1365,7 +1365,7 @@ header .global-nav__sns a:last-child {
 }
 
 .image--works {
-  background: url(./assets/Bg3.jpg) no-repeat center;
+  background: url(./assets/Bg3.png) no-repeat center;
   background-size: cover;
   perspective: 500px;
   position: relative;
@@ -1414,9 +1414,10 @@ header .global-nav__sns a:last-child {
   transform-style: preserve-3d;
 }
 
-.page-top .card .happiness_cropped{
-  /* width: 100%;
-  height: 100%; */
+.page-top .image--works .card {
+  position: absolute;
+  left: 15%;
+  width: 85%;
 }
 
 .image--about .card .happiness_cropped {
@@ -2051,6 +2052,7 @@ header .global-nav__sns a:last-child {
   animation: ratio80 1.5s forwards;
 }
 .skill-set__bar.p70:after {
+  width: 70%;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -2068,11 +2070,12 @@ header .global-nav__sns a:last-child {
   background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%, #ff4d5a);
   background-image: linear-gradient(to right, #072142, #8c2b7a 65%, #ff4d5a);
 }
-.skill-set__bar.p70.in:after {
+/* .skill-set__bar.p70.in:after {
   -webkit-animation: ratio70 1.5s forwards;
   animation: ratio70 1.5s forwards;
-}
+} */
 .skill-set__bar.p60:after {
+  width: 60%;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -2090,11 +2093,12 @@ header .global-nav__sns a:last-child {
   background-image: -o-linear-gradient(left, #072142, #8c2b7a 75%, #ff4d5a);
   background-image: linear-gradient(to right, #072142, #8c2b7a 75%, #ff4d5a);
 }
-.skill-set__bar.p60.in:after {
+/* .skill-set__bar.p60.in:after {
   -webkit-animation: ratio60 1.5s forwards;
   animation: ratio60 1.5s forwards;
-}
+} */
 .skill-set__bar.p50:after {
+  width: 50%;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -2106,11 +2110,12 @@ header .global-nav__sns a:last-child {
   background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%);
   background-image: linear-gradient(to right, #072142, #8c2b7a 65%);
 }
-.skill-set__bar.p50.in:after {
+/* .skill-set__bar.p50.in:after {
   -webkit-animation: ratio50 1.5s forwards;
   animation: ratio50 1.5s forwards;
-}
+} */
 .skill-set__bar.p40:after {
+  width: 40%;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -2122,10 +2127,10 @@ header .global-nav__sns a:last-child {
   background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%);
   background-image: linear-gradient(to right, #072142, #8c2b7a 65%);
 }
-.skill-set__bar.p40.in:after {
+/* .skill-set__bar.p40.in:after {
   -webkit-animation: ratio40 1.5s forwards;
   animation: ratio40 1.5s forwards;
-}
+} */
 .footer {
   width: 100%;
   padding: 14.4rem 0;
@@ -2146,6 +2151,7 @@ header .global-nav__sns a:last-child {
     padding: 7.2rem 0;
   }
 }
+
 .footer a {
   display: block;
   font-size: 2.8rem;
@@ -2172,7 +2178,7 @@ header .global-nav__sns a:last-child {
 .footer a:hover {
   opacity: 0.5;
 }
-@-webkit-keyframes ratio90 {
+/* @-webkit-keyframes ratio90 {
   0% {
     width: 10%;
   }
@@ -2267,4 +2273,76 @@ header .global-nav__sns a:last-child {
   to {
     width: 40%;
   }
+} */
+
+.project_info{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1.2rem;
+}
+
+.cell .heading{
+  font-size: 2.5rem;
+}
+
+.cell .who__en{
+  margin: 0.4rem 0;
+}
+
+.text__wrap-01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10%;
+  -webkit-box-sizing: border-box;
+  box-sizing: content-box;
+  max-width: 1000px;
+  align-items: center;
+  margin: 6rem auto;
+}
+
+.sub_heading{
+  font-size: 2.5rem;
+  margin: 4rem 20rem;
+}
+
+._items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+._image{
+  width: 60%;
+}
+
+._image.image-2{
+  margin-top: 5rem;
+}
+
+.justify-center{
+  justify-content: center;
+  width: 100%;
+}
+
+.initial_understanding .who__wrap{
+  width: 84.5%;
+}
+
