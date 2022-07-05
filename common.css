@@ -87,6 +87,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html{
+  scroll-behavior: smooth;
+}
 article,
 aside,
 details,
@@ -1772,7 +1775,11 @@ header .global-nav__sns a:last-child {
   transform: rotate(-45deg) translate3d(2px, -8px, 0);
 }
 .who__wrap {
-  width: 48.333%;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 800px) {
   .who__wrap {
@@ -1817,7 +1824,7 @@ header .global-nav__sns a:last-child {
   }
 }
 .who__text {
-  margin-bottom: 6.4rem;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 420px) {
   .who__text {
@@ -2321,6 +2328,12 @@ header .global-nav__sns a:last-child {
   margin: 6rem auto;
 }
 
+@media screen and (max-width: 420px) {
+  .text__wrap-01{
+    flex-direction: column;   
+  }
+}
+
 .sub_heading{
   font-size: 2.5rem;
   margin: 4rem 20rem;
@@ -2396,8 +2409,82 @@ header .global-nav__sns a:last-child {
   margin: auto;
 }
 
-.reflection{
-  width: 800px;
-  margin: 10rem auto 0;
+.who__wrap.reflection{
+  /* width: 50vw; */
+  margin: auto;
+  padding: 2rem auto;
 }
 
+.text__wrapper-content {
+  padding: 2rem;
+  background: rgb(237, 235, 198);
+  margin: 2rem auto;
+  color: #111;
+  border-radius: 1rem;
+  font-size: 16px;
+  width: 100%;
+}
+
+.question{
+  font-weight: bold;
+}
+
+.sub-container.design_decisions{
+  width: 50vw;
+  margin: 10rem auto;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+.who__name.design_decisions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+}
+
+.reflection_text{
+  padding: 2rem 4rem;
+}
+
+.reflection_text span{
+  font-weight: bold;
+}
+
+.side_bar{
+  position: fixed;
+  z-index: 1000;
+  bottom: 25rem;
+  right: 5rem;
+  padding: 1rem 1rem;
+  border-radius:2rem;
+}
+
+.side_bar-items{
+
+}
+
+.side_bar-item{
+  margin: 1rem;
+}
+
+.side_bar-item a{
+  color: rgb(203, 186, 186);
+  transition:  0.6s ease;
+}
+
+.side_bar-item:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.side_bar-item.header a{
+  border: 1px solid#de6530;
+  padding: 0.2rem;
+  text-align:center;
+  color: #de6530;
+  border-radius: 0.4rem;
+}
